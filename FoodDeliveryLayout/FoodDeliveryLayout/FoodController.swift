@@ -3,14 +3,29 @@ import SwiftUI
 class FoodController: UICollectionViewController {
     let cellId = "cellId"
     init() {
-        let layout = UICollectionViewFlowLayout()
+        let layout = UICollectionViewCompositionalLayout { sectionNumber, _ in
+            let item = NSCollectionLayoutItem(layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalHeight(1)))
+            item.contentInsets.bottom = 16
+
+            let group = NSCollectionLayoutGroup.horizontal(
+                layoutSize: .init(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .absolute(300)),
+                subitems: [item])
+
+            let section = NSCollectionLayoutSection(group: group)
+            return section
+        }
+
         super.init(collectionViewLayout: layout)
     }
 
     override func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
-        8
+        3
     }
 
     override func collectionView(
