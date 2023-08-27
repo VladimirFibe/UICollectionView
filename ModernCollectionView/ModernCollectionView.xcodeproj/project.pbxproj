@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0229B61F2A9B413C0014815E /* TextCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229B61E2A9B413C0014815E /* TextCellView.swift */; };
 		0229B6212A9B44590014815E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0229B6202A9B44590014815E /* 2.png */; };
+		0229B6242A9B4B8E0014815E /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229B6232A9B4B8E0014815E /* ScrollViewController.swift */; };
 		024C63DF2A9AC289007F5895 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C63DE2A9AC289007F5895 /* TextCell.swift */; };
 		024C63E12A9AC2B0007F5895 /* UIColor+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C63E02A9AC2B0007F5895 /* UIColor+Extenstion.swift */; };
 		024C63E42A9AC3C8007F5895 /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 024C63E32A9AC3C8007F5895 /* Grid.png */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0229B61E2A9B413C0014815E /* TextCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellView.swift; sourceTree = "<group>"; };
 		0229B6202A9B44590014815E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		0229B6232A9B4B8E0014815E /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		024C63DE2A9AC289007F5895 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		024C63E02A9AC2B0007F5895 /* UIColor+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extenstion.swift"; sourceTree = "<group>"; };
 		024C63E32A9AC3C8007F5895 /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grid.png; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0229B6222A9B4B6F0014815E /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0229B6232A9B4B8E0014815E /* ScrollViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		024C63DD2A9AC278007F5895 /* Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		028C53432A9A604A00302E71 /* ModernCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0229B6222A9B4B6F0014815E /* ScrollView */,
 				028C53442A9A604A00302E71 /* AppDelegate.swift */,
 				028C53482A9A604A00302E71 /* ViewController.swift */,
 				024C63E02A9AC2B0007F5895 /* UIColor+Extenstion.swift */,
@@ -187,6 +198,7 @@
 				028C53452A9A604A00302E71 /* AppDelegate.swift in Sources */,
 				024C63E12A9AC2B0007F5895 /* UIColor+Extenstion.swift in Sources */,
 				024C63E92A9ACCA9007F5895 /* ListCell.swift in Sources */,
+				0229B6242A9B4B8E0014815E /* ScrollViewController.swift in Sources */,
 				024C63E62A9AC461007F5895 /* TwoColumnViewController.swift in Sources */,
 				0229B61F2A9B413C0014815E /* TextCellView.swift in Sources */,
 				024C63DF2A9AC289007F5895 /* TextCell.swift in Sources */,
