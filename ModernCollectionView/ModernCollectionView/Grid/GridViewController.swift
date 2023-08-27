@@ -1,4 +1,4 @@
-import UIKit
+import SwiftUI
 
 final class GridViewController: UIViewController {
     enum Section {
@@ -34,8 +34,10 @@ final class GridViewController: UIViewController {
         return layout
     }
     private func configureDataSource() {
-        let cellRegistration = UICollectionView.CellRegistration<TextCell, Int> { cell, indexPath, itemIdentifier in
-            cell.configure(with: "\(itemIdentifier)")
+        let cellRegistration = UICollectionView.CellRegistration<UICollectionViewCell, Int> { cell, indexPath, itemIdentifier in
+            cell.contentConfiguration = UIHostingConfiguration {
+                TextCellView(title: "\(itemIdentifier)")
+            }
         }
         dataSource = UICollectionViewDiffableDataSource<Section, Int>(
             collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
